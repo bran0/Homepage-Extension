@@ -1,0 +1,27 @@
+{
+    "name": "Best Home Page Ever",
+    "author": "Brandon Cartagena",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Best Home Page Ever",
+    "permissions": [
+        "*://*/*",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": {
+            "20": "images/20x20.png",
+            "40": "images/40x40.png"
+        },
+        "default_title": "New Tab"
+    },
+    "icons": {
+        "25": "images/25x25.png",
+        "48": "images/48x48.png"
+    },
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}
